@@ -8,7 +8,7 @@ ES3 also emulates a directory structure of S3, through a prefix.
 ###Requirements
  - [AWS SDK for PHP II](http://aws.amazon.com/sdkforphp2/)
 
-###How to use
+###How to install
 Put the ES3 Class in Yii's extensions subdirectory.
 In config.main.php, include:
 
@@ -20,7 +20,7 @@ In config.main.php, include:
       ),
     )
 
-####Examples
+####How to use
 **create a bucket**  
 
     Yii::app()->s3->createBucket('my.unique.bucket');
