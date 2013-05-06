@@ -32,11 +32,13 @@ In config.main.php, include:
     $bucket = 'my.unique.bucket';
     Yii::app()->s3->uploadFile($file, $bucket);	    
 
+
 **upload a large file **  
 
     $file = '/path/to/your/file';
     $bucket = 'my.unique.bucket';
     Yii::app()->s3->uploadMultiPart($file, $bucket);
+
 
 **download a file **  
 
@@ -45,5 +47,6 @@ In config.main.php, include:
     $key = 'name.of.object';
     Yii::app()->s3->download($key, $bucket, $newfile);
     
+
 **and many, many more...**
 ====
