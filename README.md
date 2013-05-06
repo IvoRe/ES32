@@ -9,13 +9,14 @@ It is a wrapper for the S3, Amazon's Simple Storage Solution. It is specific for
 ###How to use
 Put the ES3 Class in Yii's extensions subdirectory.
 In config.main.php, include:
-'components'=>array(
-    's3'=>array(
-		'class' => 'ext.es3.ES3',
+
+    'components'=>array(
+      's3'=>array(
+        'class' => 'ext.es3.ES3',
         'aKey' => '', // your account key, obtain from Amazon
         'sKey' => '', // your secret key, obtain from Amazon
-    ),
-)
+      ),
+    )
 
 ####Examples
 **create a bucket**  
