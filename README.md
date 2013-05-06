@@ -18,9 +18,14 @@ In config.main.php, include:
 )
 
 ####Examples
+**create a bucket**  
+
+    Yii::app()->s3->createBucket('my.unique.bucket');
+    
+    
 **upload a file**  
 
-  $file = '/path/to/your/file';
-  $bucket = 'my.unique.bucket';
-  Yii::app()->s3->uploadFile($file, $bucket);	
+    $file = '/path/to/your/file';
+    $bucket = 'my.unique.bucket';
+    Yii::app()->s3->uploadFile($file, $bucket);	
 ====
