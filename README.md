@@ -3,6 +3,8 @@ The ES3 Class is an extension for the Yii Framework.
 
 It is a wrapper for the S3, Amazon's Simple Storage Solution. It is specific for version II of the AWS SDK for PHP.
 
+ES3 also emulates a directory structure of S3, through a prefix.
+
 ###Requirements
  - [AWS SDK for PHP II](http://aws.amazon.com/sdkforphp2/)
 
