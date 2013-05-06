@@ -8,14 +8,19 @@ It is a wrapper for the S3, Amazon's Simple Storage Solution. It is specific for
 
 ###How to use
 Put the ES3 Class in Yii's extensions subdirectory.
-In 
+In config.main.php, include:
+'components'=>array(
+    's3'=>array(
+		'class' => 'ext.es3.ES3',
+        'aKey' => '', // your account key, obtain from Amazon
+        'sKey' => '', // your secret key, obtain from Amazon
+    ),
+)
 
 ####Examples
-**reading unseen emails**  
+**upload a file**  
 
-  Yii::import('ext.ES3.ES3', true);
-	
-	// please replace the server path to the one of your
-	// inbox + your username and password
-	
+  $file = '/path/to/your/file';
+  $bucket = 'my.unique.bucket';
+  Yii::app()->s3->uploadFile($file, $bucket);	
 ====
