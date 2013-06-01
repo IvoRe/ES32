@@ -14,7 +14,7 @@ In config.main.php, include:
 
     'components'=>array(
       's3'=>array(
-        'class' => 'ext.es3.ES3',
+        'class' => 'ext.es3.ES3', // so the ES3 class must sit at protected/extensions/es3/ES3.php
         'aKey' => '', // your account key, obtain from Amazon
         'sKey' => '', // your secret key, obtain from Amazon
       ),
