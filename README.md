@@ -7,6 +7,7 @@ ES3 also emulates a directory structure of S3, through a prefix.
 
 ###Requirements
  - [AWS SDK for PHP II](http://aws.amazon.com/sdkforphp2/)
+ (best installed with composer)
 
 ###How to install
 Put the ES3 Class in Yii's extensions subdirectory.
